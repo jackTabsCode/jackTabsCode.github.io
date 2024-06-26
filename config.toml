@@ -1,0 +1,14 @@
+base_url = "https://jackt.space"
+title = "Jack Taylor"
+compile_sass = true
+build_search_index = true
+
+[markdown]
+highlight_code = false
+
+[extra]
+links = [
+    { title = "GitHub", href = "https://github.com/jackTabsCode", img = "github.svg" },
+    { title = "Email", href = "mailto:jack@jackt.space", img = "email.svg" },
+    # ...
+]

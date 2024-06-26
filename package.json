@@ -1,0 +1,7 @@
+{
+	"name": "jackt.space",
+	"version": "1.0.0",
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.1"
+	}
+}
