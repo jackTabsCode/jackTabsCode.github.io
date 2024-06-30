@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Jack Taylor | About</title>
+    
+    <link rel="stylesheet" href="https://jackt.space/style.css?h=3cf7801ca3b25a046c97">
+    
+    
+    
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;jackt.space">&LeftArrow; Home</a>
+</header>
+
+    <h1 class="experience-title">Experience</h1 >
+
+<div class="experience">
+   	<h2>
+    	Gen Gaming
+    	<span> 
+	Dec 2023
+	
+	- Present
+	
+ </span>
+    </h2>
+    <h4>Software Engineer</h4>
+    <p>Working on an undisclosed Roblox game.</p>
+
+    
+    <a href="https:&#x2F;&#x2F;roblox.com&#x2F;groups&#x2F;16955467">Group</a>
+	
+</div>
+
+<div class="experience">
+   	<h2>
+    	Voyager Interactive
+    	<span> 
+	May 2023
+	
+	- Sep 2023
+	
+ </span>
+    </h2>
+    <h4>Software Engineer</h4>
+    <p>Worked on a tech demo for an apocalypse survival game. It was presented to the Game Fund at RDC 2023 by the owner.</p>
+
+    
+    <a href="https:&#x2F;&#x2F;roblox.com&#x2F;games&#x2F;16551005292">Game Demo</a>
+	
+    <a href="https:&#x2F;&#x2F;roblox.com&#x2F;groups&#x2F;16778468">Group</a>
+	
+</div>
+
+
+<h1 class="experience-title">Games</h1>
+
+<div class="experience">
+   	<h2>
+    	Broadview County
+     	<span> 
+	Apr 2020
+	
+	- Present
+	
+ </span>
+    </h2>
+    <p>A community roleplay game set in the southernmost Florida Keys.</p>
+
+    
+    <a href="https:&#x2F;&#x2F;roblox.com&#x2F;games&#x2F;570460315">Game</a>
+	
+    <a href="https:&#x2F;&#x2F;roblox.com&#x2F;groups&#x2F;3016035&#x2F;">Group</a>
+	
+</div>
+
+
+<h1 class="experience-title">Education</h1>
+
+<div class="experience">
+   	<h2>
+    	University of Nevada, Las Vegas
+     	<span> 
+	Aug 2021
+	
+	- Dec 2024
+	
+ </span>
+    </h2>
+    <h4>B.S. Kinesiology</h4>
+
+    
+    <a href="https:&#x2F;&#x2F;unlv.edu">Website</a>
+	
+</div>
+
+
+<h1 class="experience-title">Open Source</h1>
+<p>View my open source work on <a href="https:&#x2F;&#x2F;github.com&#x2F;jackTabsCode">GitHub</a >!</p>
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://jackt.space/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://jackt.space/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

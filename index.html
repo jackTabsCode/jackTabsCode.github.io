@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Jack Taylor</title>
+    
+    <link rel="stylesheet" href="https://jackt.space/style.css?h=3cf7801ca3b25a046c97">
+    
+    
+    
+    
+</head>
+<body>
+    
+    <header class="space">
+        <h1>Jack Taylor</h1>
+        
+        
+        <nav class="header-links">
+            
+            <a href="&#x2F;about">About</a>
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;jackTabsCode">GitHub</a>
+            
+            <a href="mailto:jack@jackt.space">Email</a>
+            
+            
+        </nav>
+        
+    </header>
+    
+    
+    
+    
+    <main>
+        
+        <div class="space">
+            <p>Hi, I'm Jack, a software engineer, and I've been creating games on the <a href="https://roblox.com">Roblox</a> platform for 6 years. My passion lies in designing games that prioritize the player’s experience and push the limits of the platform.</p>
+<p>I am proficient in a variety of programming languages related to Roblox development, including <a href="https://typescriptlang.org">Typescript</a> and <a href="https://luau-lang.org">Luau</a>, as well as industry standard tooling. I also maintain a couple of popular open source projects made in <a href="https://rust-lang.org">Rust</a>, my new favorite language!</p>
+<p>Please see my <a href="/about">About</a> page for a more detailed overview of my experience and skills.</p>
+
+        </div>
+        
+        
+        <h2>Recent posts</h2>
+        <ul>
+            
+            <li><a href="https:&#x2F;&#x2F;jackt.space&#x2F;blog&#x2F;hello-world&#x2F;">Hello, world!</a></li>
+            
+        </ul>
+        <p><a href="https:&#x2F;&#x2F;jackt.space&#x2F;blog&#x2F;">Archive</a></p>
+        
+    </main>
+    
+    
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://jackt.space/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://jackt.space/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>
