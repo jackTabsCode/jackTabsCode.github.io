@@ -1,0 +1,63 @@
+{% extends "page.html" %}
+
+{% macro date_range(exp) %}
+	{{ exp.start | date(format="%b %Y") }}
+	{% if exp.end %}
+	- {{ exp.end | date(format="%b %Y") }}
+	{% else %}
+	- Present
+	{% endif %}
+{% endmacro date_range %}
+
+{% block content -%}
+
+<h1 class="experience-title">Experience</h1 >
+{% for work in config.extra.work %}
+<div class="experience">
+   	<h2>
+    	{{ work.company }}
+    	<span> {{ self::date_range(exp=work) }} </span>
+    </h2>
+    <h4>{{ work.title }}</h4>
+    <p>{{ work.description }}</p>
+
+    {% for link in work.links %}
+    <a href="{{ link.href }}">{{ link.title }}</a>
+	{% endfor %}
+</div>
+{% endfor %}
+
+<h1 class="experience-title">Games</h1>
+{% for project in config.extra.game_projects %}
+<div class="experience">
+   	<h2>
+    	{{ project.title }}
+     	<span> {{ self::date_range(exp=project) }} </span>
+    </h2>
+    <p>{{ project.description }}</p>
+
+    {% for link in project.links %}
+    <a href="{{ link.href }}">{{ link.title }}</a>
+	{% endfor %}
+</div>
+{% endfor %}
+
+<h1 class="experience-title">Education</h1>
+{% for school in config.extra.education %}
+<div class="experience">
+   	<h2>
+    	{{ school.title }}
+     	<span> {{ self::date_range(exp=school) }} </span>
+    </h2>
+    <h4>{{ school.degree }}</h4>
+
+    {% for link in school.links %}
+    <a href="{{ link.href }}">{{ link.title }}</a>
+	{% endfor %}
+</div>
+{% endfor %}
+
+<h1 class="experience-title">Open Source</h1>
+<p>View my open source work on <a href="{{ config.extra.links.1.href }}">GitHub</a >!</p>
+
+{%- endblock content %}

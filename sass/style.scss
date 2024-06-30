@@ -94,6 +94,37 @@ table {
     }
 }
 
+.experience {
+	h2 {
+		margin-bottom: 0.3em;
+		margin-right: 1em;
+	}
+
+	h4 {
+		margin-top: 0;
+		margin-bottom: 0.3em;
+	}
+
+	p {
+		margin-top: 0;
+		margin-bottom: 0.3em;
+	}
+
+	span {
+		font-size: 12pt;
+	}
+
+	a {
+		margin-top: 0;
+		margin-right: 0.5em;
+	}
+}
+
+.experience-title {
+	margin-top: 1em;
+	font-size: 24pt;
+}
+
 @media all and (max-width: 1200px) {
     body {
         padding: 3em 15%;

@@ -59,6 +59,20 @@ $accent-dark: #959bf0;
     .link-icon {
 		color: $accent;
 	}
+
+	.experience {
+		span {
+			color: $secondary;
+		}
+
+		h4 {
+			color: $secondary;
+		}
+	}
+
+	.experience-title {
+		color: $accent;
+	}
 }
 
 @mixin dark-theme {
@@ -102,6 +116,20 @@ $accent-dark: #959bf0;
             background-color: darken($tertiary-dark, 15%);
         }
     }
+
+   	.experience {
+		span {
+			color: $secondary-dark;
+		}
+
+		h4 {
+			color: $secondary-dark;
+		}
+	}
+
+	.experience-title {
+		color: $accent-dark;
+	}
 }
 
 @media (prefers-color-scheme: light) {

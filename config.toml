@@ -8,7 +8,18 @@ highlight_code = false
 
 [extra]
 links = [
-    { title = "GitHub", href = "https://github.com/jackTabsCode", img = "github.svg" },
-    { title = "Email", href = "mailto:jack@jackt.space", img = "email.svg" },
+	{ title = "About", href = "/about" },
+    { title = "GitHub", href = "https://github.com/jackTabsCode" },
+    { title = "Email", href = "mailto:jack@jackt.space" },
     # ...
+]
+work = [
+	{ company = "Gen Gaming", title = "Software Engineer", description = "Working on an undisclosed Roblox game.", links = [{title = "Group", href = "https://roblox.com/groups/16955467"}], start = "2023-12-01" },
+	{ company = "Voyager Interactive", title = "Software Engineer", description = "Worked on a tech demo for an apocalypse survival game. It was presented to the Game Fund at RDC 2023 by the owner.", links = [{title = "Game Demo", href = "https://roblox.com/games/16551005292"}, {title = "Group", href = "https://roblox.com/groups/16778468" }], start = "2023-05-01", end = "2023-09-01" }
+]
+game_projects = [
+	{ title = "Broadview County", description = "A community roleplay game set in the southernmost Florida Keys.", links = [{title = "Game", href = "https://roblox.com/games/570460315"}, {title = "Group", href = "https://roblox.com/groups/3016035/"}], start = "2020-04-01" },
+]
+education = [
+	{ title = "University of Nevada, Las Vegas", degree = "B.S. Kinesiology", links = [{title = "Website", href = "https://unlv.edu"}], start = "2021-08-01", end = "2024-12-01" }
 ]
